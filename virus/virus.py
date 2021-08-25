@@ -15,6 +15,13 @@ def press_a():
     print("pressed a")
     time.sleep(wait)
 
+def type_virus():
+    pg.write("Virus!! Virus!!" , 0.0005)
+    print("said virus!! virus!!")
+    time.sleep(wait)
+
+
+
 def close():
     pg.hotkey("alt", 'f4')
     print("pressed alt+f4")
@@ -30,7 +37,7 @@ def sleeping():
     print('sleeping for '+ str(waiting_time) + ' seconds')
     time.sleep(waiting_time)
 
-func_list = [press_space , press_a , close, run, sleeping]
+func_list = [press_space , press_a , close, run, sleeping,type_virus]
 
 
 
